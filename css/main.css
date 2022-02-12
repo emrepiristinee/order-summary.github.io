@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body{
+    height: 97vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background:url(/order-summary/images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 450px;
+    height: 600px;
+    background: white;
+    border-radius: 15px;
+    position: relative;
+}
+img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+h1{
+    text-align: center;
+    margin-top: 0.6em;
+}
+p{
+    text-align: center;
+    margin: 1em 3em;
+    color: var(--Grayish-blue);
+}
+.price{
+    width: 350px;
+    height: 75px;
+    background-color: var(--Light-gray);
+    position: relative;
+    left: 50px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.price img{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.price h2{
+    position: absolute;
+    top: 8px;
+    left: 90px;
+}
+.price p{
+    position: absolute;
+    top: 25px;
+    left: 43px;
+}
+.price a{
+    position: absolute;
+    left: 270px;
+    top: 25px;
+}
+.price a:hover{
+    color: var(--Dark-blue);
+    text-decoration: none;
+}
+.button-box .button-proceed{
+    text-align: center;
+    display: block;
+    margin: 20px 60px 0px 60px;
+    width: 320px;
+    height: 50px;
+    background-color: hsl(245, 75%, 52%);
+    padding: 13px;
+    color: #fff;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.button-box .button-proceed:hover{
+    opacity: 0.7;
+}
+.button-box .button-cancel{
+    text-decoration: none;
+    opacity: 0.5;
+    color: black;
+    display: block;
+    margin: 20px 165px;
+    font-weight: 600;
+}
+.button-box .button-cancel:hover{
+    color: black;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.attribution {
+    margin-top: 40px;
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
